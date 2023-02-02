@@ -1,0 +1,25 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-header {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+  }
+  
+  @media (max-width: 600px) {
+    .about-text {
+      width: 90%;
+    }
+  }
+  

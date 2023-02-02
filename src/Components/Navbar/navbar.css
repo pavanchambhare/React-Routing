@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background-color: lightgray;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .navbar-item {
+    margin: 0 10px;
+  }
+  
+  .navbar-link {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+    }
+  }
+  
