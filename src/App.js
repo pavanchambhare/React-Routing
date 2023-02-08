@@ -7,6 +7,9 @@ import Contact from './Components/Contact/Contact';
 import Navbar from './Components/Navbar/Navbar';
 import Project from './Components/Project/Project';
 import NotFound from './Components/NotFound';
+import Footer from './Components/Footer/Footer';
+
+
 
 
 
@@ -18,13 +21,16 @@ function App()   {
 
 
     <Routes>  
-  {/* <Route path="/" element={<Navbar/>} /> */}
+
+  <Route path='/' element={<Navbar/>} />
   
-     <Route path="/" element={<Home/>} />
+     <Route path="/home" element={<Home/>} />
      <Route path="/about" element={<About/>} />
      <Route path="/project" element={<Project/>} />
     <Route path="/contact" element={<Contact/>} />
+    <Route path="/footer" element={<footer/>} />
    < Route element={NotFound} />
+
   </Routes>
  
 
